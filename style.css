@@ -10,6 +10,7 @@ body{
   background:url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Mobile-LHD-v2.jpg) no-repeat;
   background-size: cover;
   height: 669px;
+  width:100%;
   
 }
 #header{
