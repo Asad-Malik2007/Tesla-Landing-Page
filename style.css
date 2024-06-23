@@ -10,24 +10,22 @@ body{
   background:url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Mobile-LHD-v2.jpg) no-repeat;
   background-size: cover;
   height: 669px;
-  width:100%;
   
 }
 #header{
   display: flex;
-  justify-content: space-between;
-  padding:5px 10px 0px 10px;
+  justify-content: space-evenly;
   align-items:center;
-  height: 60px;
+  width: 100%;
   position: fixed;
 }
 #logo{
-  width:130px;
+  width:30%;
   padding-right: 130px;
 }
 #menu-btn{
-  padding:8px 18px;
-  font-size: 15px;
+  padding:2% 3%;
+  font-size: 1rem;
   font-weight: bold;
   border: none;
   border-radius: 3px;
@@ -36,8 +34,7 @@ body{
 .content{
   display: flex;
   flex-direction: column;
-  margin-top:60px;
-  width:100%
+  margin-top:90px;
 }
 .content h1{
   font-weight: 500;
@@ -55,7 +52,7 @@ body{
   margin-top: 300px;
 }
 #order-btns{
-  margin-top:350px;
+  margin-top:310px;
 }
 #demo-btn{
   margin-top: 15px;
@@ -63,17 +60,17 @@ body{
   background-color:#2C2C31;
 }
 .btn{
-  width: 300px;
-  height: 40px;
+  width: 90%;
+  height: 5%;
   border: none;
   font-weight: 500;
-  font-size: 15px;
-  border-radius: 5px;
+  font-size: 1rem;
+  border-radius: 3px;
 }
 
 /* SECOND SECTION */
 #section2{
-  background:url("imgs/Homepage-Model-Y-Mobile-Global.jpg") no-repeat;
+  background:url("/imgs/IMG_20240618_193620.jpg") no-repeat;
   background-size: cover;
   height: 650px;
 }
@@ -103,8 +100,8 @@ body{
 
 /* Section 5*/
 #special-font{
-  height: 130px;
-  margin-top:80px;
+  height: 17%;
+  margin-top:20%;
 }
 #section5{
   background:url("https://digitalassets.tesla.com/discovery-tesla-com/image/upload/f_auto,q_auto/Homepage-Cybertruck-Mobile.jpg") no-repeat;
@@ -117,10 +114,48 @@ body{
 }
 #order-buttn{
   border-top: 2px solid whitesmoke;
-  margin-top:270px;
+  margin-top:280px;
   font-size: 13px;
 }
 #demo-buttn{
   margin-top: 15px;
   font-size: 13px;
+}
+
+
+@media screen and (min-width:768px){
+  html{
+    font-size:40px;
+  }
+  #logo{
+    padding-right: 9rem;
+  }
+  #section1,#section2,#section3,#section4,#section5{
+    height:46rem;
+  }
+  .content{
+    margin-top:30%;
+  }
+  #header{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 100%;
+    padding:0 0.5rem 0 0.5rem;
+    position: fixed;
+  }
+  #order-btn{
+    margin-top:22rem;
+    border-radius: 10px;
+  }
+  #order-buttn{
+    font-size: 0.8rem;
+    margin-top: 20rem;
+  }
+  #demo-buttn{
+    font-size:0.8rem;
+  }
+  #order-btns{
+    margin-top:21rem;
+  }
 }
